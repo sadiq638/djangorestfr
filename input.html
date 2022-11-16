@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            var nme=$("#firstname").val();
+            $("#output").text("welcome"+" "+nme);
+            $("#output").css("color","red");
+    
+
+        });
+
+    });
+</script>
+</head>
+<body>
+    <p id="output">enter the input here</p>
+    <p><label for='name'>enter your first name</label>
+        <input id="firstname" type="text">
+    </p>
+    <p><label for='name'>enter your last name</label>
+        <input id="lastname" type="text">
+    </p>
+    <p><button id="btn">submit</button></p>
+
+    
+    
+    
+    </body>
