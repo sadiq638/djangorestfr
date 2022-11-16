@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>eligiblity check</title>
+        <script>
+            function age(){
+               let name= document.getElementById("name").value;
+               let age= document.getElementById("age").value;
+               if (age >=18){
+                result='you are eligible to vote';
+               }else{
+                result='you are not eligilible to vote';
+               }
+               document.getElementById("output").innerHTML=name+" "+result+'!';
+
+            }
+
+        </script>
+    </head>
+    <body>
+    <p><label for="name">enter your name</label>
+     <input id="name" type="text" required></p>
+     <p><label for="age">enter your age</label>
+        <input id="age" type="number" required></p>
+
+    <p id="output"></p>
+    <button onclick="age()">submit</button>
+     </body>
+</html>
